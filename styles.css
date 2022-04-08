@@ -32,38 +32,34 @@ body{
 }
 a:hover{
     color:blue;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 
 img{
-    height:150px;
-    width:200px;
+    height:auto;
+    width: 200px;
     
 }
 
-
-
-#fcmc_image{
-    display: inline-block;
-    align-items: flex-start;
-    margin-left:20px;
-
-}
-
-
-
-#title{
-    margin-top: 20px;
+.carousel{
     display: flex;
+    align-items: center;
     justify-content: center;
-    font-size: 50px;
-    color:black;
+    height: 400px;
+    width: 1000px;
+    position: relative;
 }
 
-#title_caption{
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-    color: black;
+.carousel .carousel_item{
+    display: none;
+    width:100%;
 }
+.carousel .carousel_item.fade{
+    animation: fade 0.5s cubic-bezier(0.5,0.085,0.68,0.53) both;
+}
+
+.carousel .carousel_item img{
+    width: 100%;
+}
+
