@@ -5,6 +5,7 @@
     font-family: 'Oswald', sans-serif;
     scroll-behavior: smooth;
     
+    
 }
 body{
     margin:0px;
@@ -98,6 +99,7 @@ nav{
 }
 .button-login button:hover{
     color:#2D3433;
+    cursor: pointer;
 
 }
 
@@ -125,117 +127,69 @@ nav{
 
 .main-page{
     display: flex;
-    justify-content:center;
     margin-top: 0px;
     left:0px;
     flex-direction: column;
     background-color: #D7E5F0;
     width:95%;
-    min-height: 1000px;
+    min-height: 800px;
     
     
 }
 .main-page-container{
     display: flex;
-    margin-top: 120px;
+    flex-direction: row;
+    margin-top: 20px;
     justify-content: center;
+    border:solid black;
 
 }
+
+
 .main-page_left{
     display: flex;
     flex-direction: column;
-
     align-items: center;
     margin-top: 20px;
-
-    margin-right: 10px;
+    margin-right: 100px;
     height: 100%;
+    border:solid black;
 }
 
 .title-logo{
     display: flex;
     color: #2D3433;
     font-size: 25px;
-    margin-top: 40px; 
+    margin-top: 100px; 
+    justify-content: center;
 
-
+}
+h1{
+    text-transform: uppercase;
 }
 
 .main-description{
-    margin-top: 30px;
+    margin-left:30px;
     max-width: 700px;
     color:#2D3433;
+    border:solid black;
     
 }
-
-.main-image-right img{
-    margin-top: 0px;
-    max-width: 500px;
-
-    
+.main-page-right{
+    margin-top:100px;
+    width:60%;
+    border:solid black;
 }
-.nav-arrow{
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-    align-items: center;
-    
-    
-}
-#down-arrow{
-    display: inline;
-    --border-size:1rem;
-    --size: calc(var(--border-size)*2);
-    --color:#1A3548;
-
-    border-left:var(--border-size) solid var(--color,#fff);
-    border-bottom: var(--border-size) solid var(--color,#fff);
-    width: 4rem;
-    height: 4rem;
-    transform: rotate(315deg);
-    cursor: pointer;
-    
-}
-#up-arrow{
-    display: none;
-
-    --border-size:1rem;
-    --size: calc(var(--border-size)*2);
-    --color:#1A3548;
-
-    border-left:var(--border-size) solid var(--color,#fff);
-    border-bottom: var(--border-size) solid var(--color,#fff);
-    width: 4rem;
-    height: 4rem;
-    transform: rotate(135deg);
-    cursor: pointer;
-    
-}
-
-
-
-
-.arrow:hover{
-    transform: scale(1.2)
-    transform: rotate(315deg);
-}
-
-
-
-
-
-.main-page-news{
-    display: flex;
-    border: solid #1A3548;
-    width: 100%;
-    height: 350px;
-    background-color: transparent;
-    margin-top:50px;
+.row2-left{
+    width:50%;
+    margin-top: 20px;;
+    margin-left:30px;
+    border:solid black;
+    font-size: 20px;
 
 
 
 }
-
 
 
 
